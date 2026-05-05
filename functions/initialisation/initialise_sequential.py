@@ -13,7 +13,6 @@ def set(config_name="parameters.yaml"):
     f_name, g_name = gm['dynamics'], gm['likelihood']
     # Generative Process parameters
     gp = params['gp']
-    gp_integration_method = gp['integration_method']
     gp_name = gp['name']
     # the time step, used in generating hidden states from the generative process AND in estimating y',y'',...
     dt, T = gp['dt'], gp['T']
@@ -81,7 +80,7 @@ def set(config_name="parameters.yaml"):
     E_pi_y = [torch.tensor(v, dtype=torch.float64) for v in E_pi_y]
     sigma_lambda_y = [torch.tensor(v, dtype=torch.float64) for v in sigma_lambda_y]
 
-    return ([kx, ky, gp_name, gp_integration_method,
+    return ([kx, ky, gp_name,
             dt, T, f_name, g_name,
             E_theta, sigma_theta,
             E_pi_x, sigma_lambda_x,

@@ -19,7 +19,7 @@ priors:
     E_pi_x: [500] # expected noise precision
     sigma_lambda_x: [0.1, 0.5] # standard deviation for the lambda prior
 
-    E_pi_y: [10.0, 20.0, 50.0, 500, 5000, 12500, 25000] # --> [1/50, 1/25, 1/10, 1, 10, 25, 50] * E_pi_x
+    E_pi_y: [10.0, 20.0, 50.0, 500, 5000, 12500, 25000] # --> results in C=[1/50, 1/25, 1/10, 1, 10, 25, 50]
     sigma_lambda_y: [0.1, 0.5]
 
 optimizer:
@@ -56,7 +56,6 @@ optimizer:
 
 # Generative Process
 gp:
-  integration_method: 'euler'
   # state noise
   noise:
     x_wn_mu: 0.0
@@ -68,7 +67,7 @@ gp:
   #Name of the Generative Process (GP):
   name: 'glv'
   #The time step used for solving the ODEs in GP
-  dt: 0.1 # used to be 0.1
+  dt: 0.1
   # Total time used to solve the ODEs in the GP
   T: 10 # [For mean-fields this is in ms]
 

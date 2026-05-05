@@ -24,7 +24,7 @@ from functions.prior_initialisation import prior_theta, prior_lambda
 from functions.noise_generation import add_noise
 from functions import pick_cov
 
-def start(kx, ky, f, g, f_name, gp_name, gp_integration_method,
+def start(kx, ky, f, g, f_name, gp_name,
             dt, T,
             E_theta, sigma_theta,
             E_pi_x, sigma_lambda_x,
@@ -44,10 +44,8 @@ def start(kx, ky, f, g, f_name, gp_name, gp_integration_method,
 
     x_noise, y_noise = noise['x'], noise['y']
 
-
     # We won't need to pass gp_mode anymore since either lotka or lorenz is selected.
     x, x_clean, x_white_noise, x_sigma_schedule, x_colored_noise, x_context_lengths = GP.build(dt, T, x_noise)
-
 
     if gp_name == 'lotka' or gp_name == 'glv':
         y_noise_min_cap = 0
