@@ -1,5 +1,6 @@
 
-# Implementation of a Online Generalised Predictive Coding through Online Dynamic Expectation Maximisation (ODEM)
+# Online Generalised Predictive Coding through Online Dynamic Expectation Maximisation (ODEM)
+
 This is a Python/Pytorch package, where the neuronal message-passing in a one-layer Predictive Coding (PC) network has
 implemented using Python and Pytorch running on CPU.
 ---
