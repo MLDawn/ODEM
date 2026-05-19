@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+
+message: "If you use this software in your research, please cite the associated paper."
+
+title: "ODEM: Online Generalised Predictive Coding"
+
+authors:
+  - family-names: "Hossein Zadeh Bazargani"
+    given-names: "Mehran"
+
+repository-code: "https://github.com/MLDawn/ODEM"
+
+license: "GPL-3.0-only"
+
+preferred-citation:
+  type: article
+  title: "Online Generalised Predictive Coding"
+
+  authors:
+    - family-names: "Hossein Zadeh Bazargani"
+      given-names: "Mehran"
+
+    - family-names: "Urbas"
+      given-names: "Szymon"
+
+    - family-names: "Razi"
+      given-names: "Adeel"
+
+    - family-names: "Murphy"
+      given-names: "Thomas Brendan"
+
+    - family-names: "Friston"
+      given-names: "Karl"
+
+  journal: "arXiv preprint arXiv:2605.02675"
+  year: 2026
