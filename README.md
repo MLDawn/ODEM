@@ -165,4 +165,4 @@ Please refer to the repository license for usage conditions.
 
 For questions, collaborations, or issues related to the repository, please open an issue on GitHub.
 
-GitHub Repository: [ODEM Repository](https://github.com/MLDawn/ODEM?utm_source=chatgpt.com)
+GitHub Repository: [ODEM Repository](https://github.com/MLDawn/ODEM)
